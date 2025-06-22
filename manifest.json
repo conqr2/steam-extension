@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Steam HKD to USD Converter",
+  "version": "1.0",
+  "description": "Converts HKD prices on the Steam store to USD.",
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://store.steampowered.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/16.png",
+    "32": "assets/icons/32.png",
+    "256": "assets/icons/256.png",
+    "512": "assets/icons/512.png",
+    "1024": "assets/icons/1024.png"
+  }
+}
